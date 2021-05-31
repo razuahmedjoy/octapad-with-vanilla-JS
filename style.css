@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.octapad {
+  background: rgb(31, 2, 2);
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+  min-width: 300px;
+  min-height: 300px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+@media (max-width: 360px) {
+  .octapad {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9 {
+  background: green;
+
+  padding: 10px;
+  border: 1px solid black;
+  color: aliceblue;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: inset 0 0 5px #000000;
+  transition: 0.1s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover,
+.item7:hover,
+.item8:hover,
+.item9:hover {
+  opacity: 0.8;
+}
+.item1:active,
+.item2:active,
+.item3:active,
+.item4:active,
+.item5:active,
+.item6:active,
+.item7:active,
+.item8:active,
+.item9:active {
+  box-shadow: inset 0 0 10px #000000;
+}
+.active {
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.item1 {
+  background: rgb(170, 43, 43);
+}
+.item2 {
+  background: rgb(169, 149, 40);
+}
+.item3 {
+  background: rgb(95, 163, 55);
+}
+.item4 {
+  background: rgb(56, 155, 134);
+}
+.item5 {
+  background: rgb(43, 79, 128);
+}
+.item6 {
+  background: rgb(77, 36, 100);
+}
+.item7 {
+  background: rgb(131, 120, 127);
+}
+.item8 {
+  background: rgb(134, 183, 209);
+}
+.item9 {
+  background: rgb(17, 48, 65);
+}
+
+.footer {
+  padding: 2px 0 0 0;
+  position: fixed;
+  bottom: 0;
+  background: rgb(212, 234, 245);
+  width: 100%;
+}
+.footer p {
+  margin-bottom: 0 !important;
+  font-size: 0.9rem;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+}
